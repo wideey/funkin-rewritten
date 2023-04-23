@@ -16,12 +16,12 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ------------------------------------------------------------------------------]]
-local metaFile = require "meta" -- this is needed cause conf.lua gets loaded before main.lua
+local meta = require "meta" -- this is needed cause conf.lua gets loaded before main.lua
 
 function love.conf(t)
 	t.identity = "funkin-rewritten"
 	t.version = "11.3"
 	--t.console = true
 
-	t.window.title = "Friday Night Funkin' Rewritten " .. version
+	t.window.title = "Friday Night Funkin' Rewritten " .. meta.version
 end

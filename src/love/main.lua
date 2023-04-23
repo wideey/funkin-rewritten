@@ -18,11 +18,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ------------------------------------------------------------------------------]]
 
-metaFile = require "meta"
-
-credits = credits -- this just makes the credits variable (from meta.lua) global
-version = version -- this just makes the version variable (from meta.lua) global
-
 function love.load()
 	local curOS = love.system.getOS()
 
@@ -37,6 +32,7 @@ function love.load()
 	status = require "modules.status"
 	audio = require "modules.audio"
 	graphics = require "modules.graphics"
+	meta = require "meta"
 
 	-- Load settings
 	settings = require "settings"
