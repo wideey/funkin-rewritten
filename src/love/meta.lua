@@ -16,10 +16,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ------------------------------------------------------------------------------]]
-version = "v1.1.1 beta 3"
+local version = "v1.1.0 beta 3"
+return  {
+    version = version,
 
-credits = version .. [[
-    Developed by HTV04
-    Original game by Funkin' Crew, in association with Newgrounds
-    Thanks to all Github contributors! <3
-]]
+    credits = string.format([[
+%s
+Developed by HTV04
+Original game by Funkin' Crew, in association with Newgrounds
+Thanks to all Github contributors! <3
+    ]], version)
+}

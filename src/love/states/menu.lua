@@ -111,7 +111,7 @@ local function switchMenu(menu) -- actual code for the menu options
 
 		return switchMenu(1)
 	elseif menu == 4 then
-		love.window.showMessageBox("Credits", credits)
+		love.window.showMessageBox("Credits", meta.credits)
 	elseif menu == 3 then
 		function leftFunc()
 			if menuState == 3 then
